@@ -1,0 +1,189 @@
+
+@import "all.css";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color: #566c2b;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#icon{
+    display: flex;
+    list-style: none;
+}
+a{
+text-decoration: none;
+}
+header>#logo{
+    font-size: xx-large;
+}
+#menu > ul{
+    display: flex;
+    list-style: none;
+}
+#menu ul > li{
+    padding: 10px;
+}
+header a{
+    color: white;
+}
+.inserch{
+    background: none;
+    border: none;
+    color: #111;
+    box-sizing: border-box!important;
+    background: #eee;
+    padding: 0 0 0 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 24px;
+    background-color: #eee;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+.inserch:required{
+    box-shadow: none;
+}
+
+#main{
+    display: flex;
+}
+#service-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#main article{
+    padding: 10px;
+    margin-top: 20px;
+}
+article p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.service-box{
+    flex-basis: 30%;
+    max-width: 370px;
+    border: 1.2px solid #eee;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+}
+.service-box p{
+    margin: 5px 0;
+}
+aside{
+    flex: 0 0 20vw;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+aside ul{
+    list-style: none;
+    
+}
+aside ul li a{
+    padding: 20px;
+    display: block;
+    border-bottom: 2px solid gray;
+    color: #566c2b;
+}
+aside ul li:hover{
+    background-color: white;
+}
+aside img{
+    width: 100%;
+    margin-top: 15px;
+}
+.service-img img{
+    width: 100%;
+}
+.ancore{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.ancore a{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    display: block;
+}
+.ancore a:hover{
+    border: 1px solid gray;
+    color: gray;
+    background-color: white;
+}
+footer{
+    background-color: #566c2b;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+@media screen and (max-width: 900px){
+    aside{
+        flex: 0 0 30vw;
+    }
+    .service-box{
+        flex: 0 0 45%;
+    }
+    #serch{
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 700px){
+   .inserch{
+       order: 1;
+       width: 100%;
+   }
+   #logo{
+       order: -1;
+   }
+   nav{
+       order: 2;
+   }
+}
+@media screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    header #logo{
+        order: -1;
+        margin: auto;
+    }
+    header nav{
+        margin: auto;
+    }
+    header #serch{
+        margin: auto;
+    }
+    aside{
+        flex: 0 0 37vw;
+        order: 1;
+    }
+    #service-container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px){
+    #main{
+        flex-direction: column;
+    }
+    #service-container{
+        align-items: center;
+    }
+    h1,h2{
+        text-align: center;
+    }
+}
